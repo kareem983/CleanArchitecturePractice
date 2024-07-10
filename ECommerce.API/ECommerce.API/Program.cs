@@ -1,4 +1,5 @@
 using E_commerce.API.Middlewares;
+using E_commerce.Application;
 using ECommerce.Infrastructure.DI;
 
 
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 
 builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
 
