@@ -32,7 +32,7 @@ namespace ECommerce.Presentation.Controllers
         }
 
 
-        [HttpPost("GetProductsWithMediator")]
+        [HttpGet("GetProductsWithMediator")]
         public async Task<IActionResult> GetProducts()
         {
             var query = new GetAllProductsQuery();
